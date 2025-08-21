@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "App",
+    "slug": "App",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you set a profile picture."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "The app accesses your camera to let you take a profile picture."
+        }
+      ]
+    ]
+    },
+    "plugins": [
+      [
+        "expo-notifications"
+      ]
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.jaimittal.App"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "226d1ac1-eac2-478c-8a3b-56022e39a57d"
+      }
+    }
+  }
+}
